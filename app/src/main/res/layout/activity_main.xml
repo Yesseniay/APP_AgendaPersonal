@@ -5,15 +5,86 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#BAEDE6"
+    tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="191dp"
+        android:layout_height="116dp"
+        android:text="Agenda Personal"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <ImageButton
+        android:id="@+id/id_button"
+        android:layout_width="184dp"
+        android:layout_height="139dp"
+        android:background="@drawable/btn_circulo"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/contactos"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Contactos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <ImageButton
+        android:id="@+id/btn_agregar"
+        android:layout_width="200dp"
+        android:layout_height="152dp"
+        android:background="@drawable/btn_circulo"
+        android:padding="10dp"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/gt"
+
+        tools:layout_editor_absoluteY="348dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir contactos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <ImageButton
+        android:id="@+id/btn_notas"
+        android:layout_width="187dp"
+        android:layout_height="134dp"
+        android:background="@drawable/btn_circulo"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/notas"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="notas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="672dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
