@@ -16,8 +16,8 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="36dp" />
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="29dp" />
 
     <ImageButton
         android:id="@+id/id_button"
