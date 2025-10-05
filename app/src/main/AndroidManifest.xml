@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAgenda">
         <activity
-            android:name=".NotaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".agregarActivity"
+            android:name=".agregarContacto"
             android:exported="false" />
         <activity
             android:name=".ContactoActivity"
