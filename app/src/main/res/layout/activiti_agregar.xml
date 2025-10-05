@@ -52,4 +52,12 @@
         tools:layout_editor_absoluteX="285dp"
         tools:layout_editor_absoluteY="405dp" />
 
+    <ImageButton
+        android:id="@+id/btn_Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="26dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

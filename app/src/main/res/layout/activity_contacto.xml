@@ -25,14 +25,6 @@
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="126dp" />
 
-    <TextView
-        android:id="@+id/telefono"
-        android:layout_width="245dp"
-        android:layout_height="38dp"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="243dp" />
-
     <ImageButton
         android:id="@+id/btn_volver"
         android:layout_width="wrap_content"
@@ -40,5 +32,24 @@
         app:srcCompat="@android:drawable/ic_menu_revert"
         tools:layout_editor_absoluteX="19dp"
         tools:layout_editor_absoluteY="22dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contenedor"
+        android:layout_width="356dp"
+        android:layout_height="231dp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#100E0E"
+        android:text="Contactos"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:autoSizeTextType="uniform"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="49dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
