@@ -6,13 +6,19 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "AgendaPersonal.db";
     private static final String SQL_CREATE_CONTACTOS =
-            "CREATE TABLE " + AgendaContract.ContactoEntry.TABLE_NAME + " (" +
+            "CREATE TABLE " + AgendaContract.ContactoEntry.TABLE_NAME+ " (" +
                     AgendaContract.ContactoEntry.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                     AgendaContract.ContactoEntry.COLUMN_NAME + " TEXT," +
-                    AgendaContract.ContactoEntry.COLUMN_EMAIL + " TEXT UNIQUE NOT NULL," +
+                    AgendaContract.ContactoEntry.COLUMN_EMAIL + "TEXT,"+
                     AgendaContract.ContactoEntry.COLUMN_NUMERO + " TEXT UNIQUE NOT NULL," +
                     AgendaContract.ContactoEntry.COLUMN_NOTAS + " TEXT)";
+    private static final String SQL_CREATE_NOTAS =
+            "CREATE TABLE" + aNotasContract.NotasEntry.TABLE_NAME + " (" +
+                    aNotasContract.NotasEntry.COLUMN_NOTA_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    aNotasContract.NotasEntry.COLUMN_TITULO + "TITULO,"+
+                    aNotasContract.NotasEntry.COLUMN_NOTA_AUTHOR + " TEXT)" ;
 
+            ;
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
