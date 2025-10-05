@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAgenda">
         <activity
+            android:name=".agregarContacto"
+            android:exported="false" />
+        <activity
             android:name=".ContactoActivity"
             android:exported="false" />
         <activity
