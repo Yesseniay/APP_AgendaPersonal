@@ -9,7 +9,7 @@
     tools:context=".ContactoActivity">
 
     <ImageButton
-        android:id="@+id/btn_buscar"
+        android:id="@+id/btnn_guardar"
         android:layout_width="71dp"
         android:layout_height="68dp"
         app:srcCompat="@android:drawable/ic_menu_search"
@@ -27,11 +27,11 @@
 
     <TextView
         android:id="@+id/telefono"
-        android:layout_width="209dp"
-        android:layout_height="50dp"
+        android:layout_width="245dp"
+        android:layout_height="38dp"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteY="243dp" />
 
     <ImageButton
         android:id="@+id/btn_volver"
