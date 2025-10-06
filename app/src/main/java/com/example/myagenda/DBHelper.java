@@ -16,7 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
             "CREATE TABLE" + aNotasContract.NotasEntry.TABLE_NAME + " (" +
                     aNotasContract.NotasEntry.COLUMN_NOTA_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                     aNotasContract.NotasEntry.COLUMN_TITULO + "TITULO,"+
-                    aNotasContract.NotasEntry.COLUMN_NOTA_AUTHOR + " TEXT)" ;
+                    aNotasContract.NotasEntry.COLUMN_NOTA_TEXTO+ " TEXTO)" ;
 
             ;
     public DBHelper(Context context) {
