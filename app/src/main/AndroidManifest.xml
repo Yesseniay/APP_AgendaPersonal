@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAgenda">
         <activity
+            android:name=".item_contacto"
+            android:exported="false" />
+        <activity
             android:name=".ActivitynoescrActivity"
             android:exported="false" />
         <activity
