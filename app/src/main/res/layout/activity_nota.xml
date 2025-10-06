@@ -23,14 +23,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--  búsqueda  -->
+    <!-- Lista de notas -->
     <LinearLayout
         android:id="@+id/search_container"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/modelo3"
+        android:background="@drawable/edittext_border"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingHorizontal="12dp"
@@ -45,7 +45,7 @@
             android:layout_height="20dp"
             android:contentDescription="Buscar"
             android:src="@android:drawable/ic_menu_search"
-            android:tint="#808080" />
+             />
 
         <!-- EditTexT -->
         <EditText
@@ -61,9 +61,10 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <!-- Lista de notas -->
 
-    <!--boton agregar -->
+    <!--  búsqueda  -->
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/Notas"
         android:layout_width="397dp"
@@ -79,6 +80,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search_container"
         app:layout_constraintVertical_bias="0.137" />
+    <!--boton agregar -->
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnAgregarNota"

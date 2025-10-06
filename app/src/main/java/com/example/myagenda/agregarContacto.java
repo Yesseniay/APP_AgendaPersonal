@@ -6,8 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-
-public class AgregarContactoActivity extends AppCompatActivity {
+public class agregarContacto extends AppCompatActivity{
 
     private EditText etNombre, etNumero, etEmail, etNotas;
     private ContactosManager manager;
