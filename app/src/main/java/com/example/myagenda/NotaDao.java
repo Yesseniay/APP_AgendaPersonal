@@ -2,6 +2,8 @@ package com.example.myagenda;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.content.ContentValues;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,8 +52,20 @@ public class NotaDao {
             db.close();
 
             return listaNotas;
+
         }
+       public boolean insertarNota(Nota nota) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+            ContentValues valores = new ContentValues();
+          valores.put(aNotasContract.NotasEntry.COLUMN_TITULO, nota.getTitulo());
+          valores.put(aNotasContract.NotasEntry.COLUMN_NOTA_TEXTO, nota.getTexto());
+
+          long id = db.insert(aNotasContract.NotasEntry.TABLE_NAME, null, valores);
+          db.close();
+          return id != -1;
     }
+
+}
 
 
 
